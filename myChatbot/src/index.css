@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to bottom right, rgb(58, 51, 70), rgb(18, 38, 68), black);
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: Bitcount;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-screen{
+  height: 70%;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.chat-screen::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-screen::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+
+.aiMessage{
+  align-self: flex-start;
+  background-color: rgb(176, 192, 180);
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+.userMessage{
+  align-self: flex-end;
+  background-color: rgb(182, 177, 177);
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.input-field{
+  height: 10%;
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-input{
+  height: 40%;
+  width: 90%;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.send{
+  height: 60%;
+  width: 10%;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  font-family: Open Sans;
+  cursor :pointer;
+}
+
+.ai-typing{
+  align-self: flex-start;
+  color: white;
+   margin: 0.3rem;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-style: italic;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 0.3;}
+  50% {opacity: 0.8;}
+  100% {opacity: 0.3;}
+}
+
+@media screen and (max-width: 540px) {
+  .input-field{
+    height: 8%;
+    width: 93%;
+  }
+  
+  .text-input{
+    height: 40%;
+    width: 80%;
+  }
+  
+  .send{
+    height: 60%;
+    width:15%;
+  }
+  
+  .aiMessage, .userMessage{
+    font-size: 1.1rem;
+  }
+}
