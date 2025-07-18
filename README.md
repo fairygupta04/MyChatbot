@@ -1,18 +1,22 @@
-MyChatbot
+# MyChatbot 
 
-An interactive AI-powered chatbot built using React and Node.js. This project connects to the OpenAI API and provides a sleek, responsive user interface for a real-time chatting experience.
+An interactive AI-powered chatbot built using React and Node.js. This project uses the **Mistral 7B Instruct model** via **OpenRouter API** to generate intelligent responses in real time, with a modern and responsive chat interface.
 
 ---
 
-Features:
-- AI-generated responses (OpenAI API)
-- Chat interface with user/AI message bubbles
-- Modern responsive design
-- Full-stack app with a Node.js backend and React frontend
-- Environment variables stored securely using `.env`
+### Features
 
-Tech Stack:
-- Frontend: React, CSS
-- Backend: Node.js, Express
-- AI: Mistral 7B Instruct (via OpenRouter)
-- Version Control: Git & GitHub
+- AI-generated responses (via OpenRouter)
+- Clean, real-time chat interface
+- Sleek and responsive design
+- Full-stack architecture with React + Node.js
+- Secure API key handling using `.env`
+
+---
+
+### Tech Stack
+
+- **Frontend:** React, CSS
+- **Backend:** Node.js, Express
+- **AI Model:** Mistral 7B Instruct (via OpenRouter)
+- **Version Control:** Git & GitHub
